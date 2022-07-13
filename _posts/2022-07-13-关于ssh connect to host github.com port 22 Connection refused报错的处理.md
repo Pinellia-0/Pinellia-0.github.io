@@ -1,6 +1,6 @@
 ---
 title: 关于ssh connect to host github.com port 22 Connection refused报错的处理
-tags: 随笔
+tags: 笔记
 
 ---
 
