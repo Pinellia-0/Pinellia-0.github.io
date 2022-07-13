@@ -1,6 +1,8 @@
 # 关于ssh: connect to host github.com port 22: Connection refused报错的处理
 
+摩西摩西~
 
+`GitHub` 对大家来说一定不陌生，无论是学习还是`交`（爬）`朋`（项）`友`（目）。
 
 ## 问题发现
 
