@@ -97,9 +97,9 @@ debug1: connect to address 127.0.0.1 port 22: Connection refused
 ssh: connect to host github.com port 22: Connection refused
 ```
 
-从上面的信息马上就发现了诡异的地方，连接<u>http://github.com</u>的地址居然是`::1`和`127.0.0.1`。前者是IPV6的localhost地址，后者是IPV4的localhost地址。
+从上面的信息马上就发现了诡异的地方，连接<u>[http://github.com](http://github.com)</u>的地址居然是`::1`和`127.0.0.1`。前者是IPV6的localhost地址，后者是IPV4的localhost地址。
 
-到这里问题就很明确了，是DNS解析出问题了，导致[http://github.com](https://link.zhihu.com/?target=http%3A//github.com)域名被解析成了localhost的ip地址，就自然连不上GitHub了。
+到这里问题就很明确了，是DNS解析出问题了，导致[http://github.com](http://github.com)域名被解析成了localhost的ip地址，就自然连不上GitHub了。
 
 Windows下执行`ipconfig /flushdns` 清楚DNS缓存后也没用，最后修改hosts文件，增加一条github.com的域名映射搞定。
 
@@ -107,7 +107,7 @@ Windows下执行`ipconfig /flushdns` 清楚DNS缓存后也没用，最后修改h
 140.82.113.4 github.com
 ```
 
-查找[http://github.com](https://link.zhihu.com/?target=http%3A//github.com)的ip地址可以使用[https://www.ipaddress.com/](https://link.zhihu.com/?target=https%3A//www.ipaddress.com/)来查询，也可以使用`nslookup`命令
+查找[http://github.com](http://github.com)的ip地址可以使用[https://www.ipaddress.com/](https://www.ipaddress.com/)来查询，也可以使用`nslookup`命令
 
 ```bash
 nslookup github.com 8.8.8.8
