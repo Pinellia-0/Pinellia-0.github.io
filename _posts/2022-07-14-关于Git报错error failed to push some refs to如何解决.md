@@ -1,11 +1,8 @@
 ---
-title: 关于Git报错error: failed to push some refs to...如何解决
-
-tags: 计算机相关问题
+title: error: failed to push some refs to报错
+tags: Git报错
 
 ---
-
-
 
 在使用Git推送过程中出现错误
 
