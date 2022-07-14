@@ -1,5 +1,5 @@
 ---
-title: error: failed to push some refs to报错
+title: 关于error ：failed to push some refs to报错
 tags: Git报错
 
 ---
